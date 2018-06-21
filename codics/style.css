@@ -1,0 +1,238 @@
+@font-face {
+    font-family:'Quantico-Bold';
+     src: url(./fonts/Quantico-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Quantico-BoldItalic';
+     src: url(./fonts/Quantico-BoldItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Quantico-Italic';
+     src: url(./fonts/Quantico-Italic.ttf)
+}
+
+@font-face {
+    font-family: 'Quantico-Regular';
+     src: url(./fonts/Quantico-Regular.ttf)
+}
+
+body {
+	outline: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+.mainContainer {
+	width: 100%;
+	background-image: url(img/Background.png);
+	background-size: cover;
+}
+.row1 {
+	width: 100%;
+	height: 90px;
+}
+
+.structure:hover , .HTML:hover , .CSS:hover , .JS:hover {
+	padding-bottom: 5px;
+	border-bottom: 2px solid #FFF;
+}
+.website {
+	margin-top: 62px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	float: right;
+	margin-right: 100px;
+	width: 30%;
+	color: white;
+	font-family:'Quantico-Bold';
+}
+.website:hover {
+	cursor: pointer;
+}
+.logo {
+	float: left;
+	margin-top: 62px;
+	margin-left: 92px;
+}
+ 
+.row2 {
+
+	text-align: center;
+}
+.Development {
+	font-size: 36px;
+	margin-top: 100px;
+	color: white;
+	text-align: center;
+	font-family:'Quantico-Bold';
+}
+.beauty {
+	font-size: 27px;
+	margin-top: 50px;
+	color: white;
+	font-family: 'Quantico-Regular';
+}
+.row3 {
+    width: 100%;
+    height: 56vw;
+    background-image: url(img/gallery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.right , .left {
+	width: 64px;
+	height: 64px;
+	top: 58%;
+	position: absolute;
+	cursor: pointer;
+}
+.left {
+	left:25px;
+}
+ .right{right:25px;
+ }
+ ul {
+ 	list-style: none;
+ 	padding: 0px;
+ }
+ .row4 {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	color: white;
+ 	width: 100%;
+ 	margin: auto;
+    max-width: 80%;
+    padding: 10% 0px; 
+ }
+.whatisthis {
+	  font-family: 'Quantico-Regular';
+	  font-size: 16px;
+	  top: 50px;
+	  width: 28%;
+
+}
+h2 {
+	text-align: left;
+	  font-family:'Quantico-Bold';
+	  font-size: 28px;
+}
+@media(max-width: 1100px) and (min-width: 768px){
+	
+	
+	.website , .logo {
+		float: none;
+		margin: 0px !important;
+	}
+	 
+	.row1 {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top:   	50px;
+}
+	.logo {
+		width: 25%;
+		text-align: center;
+	}
+	.website {
+		width: 55%;
+	}
+}
+@media(max-width: 768px) {
+	.structure , .HTML , .CSS , .JS{
+		font-size: 12px;
+		max-width: max-content;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.row1 {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top:   	50px;
+}
+	.website , .logo {
+		float: none;
+		margin: 0px !important;
+	}
+	.website {
+		flex-direction: column;
+		display: flex;
+		float: right;
+		width: 100%;
+	}
+	.logo {
+		width: 40%;
+	}
+	.mobmenu {
+	right: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+	}
+	.mobmenu span {
+	display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #FFF;
+    margin-bottom: 5px;
+    right: 25px
+    
+}
+	.Development {
+		margin-top: 20px;
+		font-size: 20px;
+	}
+	.beauty {
+		font-size: 18px;
+	}
+	.left {
+	width: 32px;
+	height: 32px;
+	left: 10px;
+	top: 55%;
+}
+ .right{
+ 	top: 55%;
+ 	right: 10px;
+ 	width: 32px;
+	height: 32px;
+ 
+ }
+ .whatisthis {
+	  font-family: 'Quantico-Regular';
+	  font-size: 12px;
+	  top: 30px;
+	  width: 100%;
+}
+h2 {
+	text-align: left;
+	  font-family:'Quantico-Bold';
+	  font-size: 18px;
+}
+	.row4 {
+		flex-wrap: wrap;
+	}
+	.websitewrap {
+		display: none;
+		margin-top: 25px;
+	}
+}
